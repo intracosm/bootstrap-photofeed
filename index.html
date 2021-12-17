@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/5e1bda4b1b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bootstrap instaphotofeed</title>
+  </head>
+  <body class= "bg-secondary">
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><i class="fas fa-camera-retro">
+            <span class="navttl">Finstagram</span></i
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Button trigger modal -->
+            <div class="btst d-flex">
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Create a new post
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Create fake post
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body flex-direction: column">
+                    <input type="text" size="45" />
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                      ><i class="fas fa-camera"></i
+                    ></a>
+                    <a
+                      href="https://www.google.com/search?q=you%27re+on+the+internet&sxsrf=AOaemvIAdXCz6ks54pPqWfC0qRPMa0dV4g%3A1639689300876&ei=VKy7Ya_5NOqrptQP-8ODwAg&ved=0ahUKEwiv88fSnun0AhXqlYkEHfvhAIgQ4dUDCA4&uact=5&oq=you%27re+on+the+internet&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMggIABAWEAoQHjIICAAQFhAKEB46BwgAEEcQsAM6CAgAEAgQBxAeOggIABANEAUQHjoFCAAQhgM6BggAEAgQHjoFCAAQzQI6CAgAEAgQChAeOggIABAHEAUQHkoECEEYAEoECEYYAFDiBljDWmCfgAFoAnACeACAAacBiAHUBpIBAzAuN5gBAKABAcgBCMABAQ&sclient=gws-wiz"
+                      ><i class="fas fa-map-marker"></i
+                    ></a>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-danger"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                    <button type="button" class="btn btn-success">
+                      Publish
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--dropdown-->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fas fa-cogs"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+                    <!--pills tabs-->
+    <ul class="home1 nav nav-pills bg-light" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="pills-home-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-home"
+          type="button"
+          role="tab"
+          aria-controls="pills-home"
+          aria-selected="true"
+        >
+          <i class="fas fa-th"></i>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link"
+          id="pills-profile-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#pills-profile"
+          type="button"
+          role="tab"
+          aria-controls="pills-profile"
+          aria-selected="false"
+        >
+          <i class="far fa-id-badge"></i>
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+        <!--content in grid-->
+        <div class="container-fluid bg-dark d-flex flex-wrap">
+          <div class="row g-0">
+            <div class="col-lg-4">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/03/31/19/20/dog-4988985__340.jpg
+                  "
+                class="img1"
+                alt="..."
+              />
+            </div>
+            <div class="col-lg-4">
+              <img
+                src="https://c4.wallpaperflare.com/wallpaper/449/568/883/berserk-adventure-time-black-swordsman-guts-trees-hd-wallpaper-preview.jpg"
+                class="img1"
+                alt="..."
+              />
+            </div>
+            <div class="col-lg-4">
+              <img
+                src="https://cdn.shopify.com/s/files/1/0271/7209/files/cthulhub.jpg?v=1596821133"
+                class="img1"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="row g-0">
+            <div class="col-lg-4">
+              <img
+                src="https://ae01.alicdn.com/kf/HTB1CT3VmAOWBuNjSsppq6xPgpXax/wall-decor-fabric-poster-custom-print-fantastic-artwork-Berserk-Guts-Zodd-DM368-for-room-decor-home.jpg"
+                class="img1"
+                alt="..."
+              />
+            </div>
+            <div class="col-lg-4">
+              <img
+                src="https://nypost.com/wp-content/uploads/sites/2/2021/12/steph-curry-nba-3-point-record-2.jpg?quality=90&strip=all"
+                class="img1"
+                alt="..."
+              />
+            </div>
+            <div class="col-lg-4">
+              <img
+                src="https://64.media.tumblr.com/4f38100228cabf29a8a6ccbb24c88f24/tumblr_pdjmjswkvD1xchla7o1_500.gifv"
+                class="img1"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div class="row g-0">
+            <div class="col-lg-4">
+              <img
+                src="https://media.istockphoto.com/photos/aurora-borealis-with-silhouette-love-romantic-couple-on-the-travel-picture-id1070065352?k=20&m=1070065352&s=170667a&w=0&h=c1m4tLifx3OA4EDb98sRtkuNuPHfzR8gxxuaswaTX84="
+                class="img1"
+                alt="..."
+              />
+            </div>
+            <div class="col-lg-4">
+              <img
+                src="https://wallpaperaccess.com/full/41080.jpg"
+                class="img1"
+                alt="..."
+              />
+            </div>
+            <div class="col-lg-4">
+              <img
+                src="https://i.pinimg.com/originals/c1/f1/08/c1f108221e6eb04d627ebb68318687a5.webp"
+                class="img1"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--news feed view -->
+      <div
+        class="tab-pane fade bg-secondary" 
+        style="width:100%;"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+      <div class="dog">
+        <div class="row">
+          <div class="col-md-3  offset-md-4">
+            <div class="card ms-5" style="width: 25rem">
+              <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                  Puppucino <span class="text-muted">10/13 </span>
+                </div>
+                <img
+                  src="https://cdn.pixabay.com/photo/2020/03/31/19/20/dog-4988985__340.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">1,000,000 likes</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <span><i class="far fa-heart text-muted"> comment</i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!--second post feed-->
+        <div class="row my-4">
+          <div class="col-md-3 offset-md-4">
+            <div class="card ms-5" style="width: 25rem">
+              <div class="card">
+                <div class="card-header d-flex justify-content-between"">
+                berserk x adventure time <span class="text-muted">12/17</span>
+              </div>
+              <img
+                src="https://c4.wallpaperflare.com/wallpaper/449/568/883/berserk-adventure-time-black-swordsman-guts-trees-hd-wallpaper-preview.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">3,000,000 likes</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <span><i class="far fa-heart text-muted"> comment</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--third post-->
+      <div class="row my-4">
+        <div class="col-md-3 offset-md-4">
+          <div class="card ms-5" style="width: 25rem">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between">
+                Eldritch encounter <span class="text-muted">12/20</span>
+              </div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0271/7209/files/cthulhub.jpg?v=1596821133"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">2,000,000 likes</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <span><i class="far fa-heart text-muted"> comment</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--4th final post -->
+      <div class="row my-4">
+        <div class="col-md-3 offset-md-4">
+          <div class="card ms-5" style="width: 25rem">
+            <div class="card">
+              <div class="card-header d-flex justify-content-between">
+                Greatest story ever told. <span class="text-muted">12/24</span>
+              </div>
+              <img
+                src="https://ae01.alicdn.com/kf/HTB1CT3VmAOWBuNjSsppq6xPgpXax/wall-decor-fabric-poster-custom-print-fantastic-artwork-Berserk-Guts-Zodd-DM368-for-room-decor-home.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">22,000,000 likes</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. rip Miura sensei.
+                </p>
+                <span><i class="far fa-heart text-muted"> comment</i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
